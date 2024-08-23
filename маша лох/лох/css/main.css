@@ -1,0 +1,102 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+@font-face {
+	font-family: new;
+	src: url(../fonts/Pixy.ttf);
+}
+
+body {
+	font-family: new;
+	background-color: #efefef;
+}
+
+main {
+/*ширина	*/
+	width: 70%;
+	padding: 50px;
+/*центрируем по горизонтам	*/
+	margin: auto;
+	background-color: #0e4e6b;
+/*гибкая сетка	*/
+	display: flex;
+	flex-wrap: wrap;
+/*для сохранения текущий размеров обьектов	*/
+	justify-content: center;
+}
+
+/*изменяем тег с именем фото*/
+.photo {
+	width: calc(50% - 40px);
+	height: calc((35vw - 40px) / 16 * 9);
+	margin: 10px;
+	background-color: #18373b;
+/*выравниваем фото по ценру и растягиваем по краямб*/
+	background-position: center;
+	background-size: cover;
+/*	длительность transform(анимация)*/
+	transition: all 0.5s ease;
+}
+/*псевдо класс отвечающий за наведение курсора мыши*/
+.photo:hover {
+	transform: rotate(3deg) scale(1.07);
+}
+div {
+	background-color: #18373b;
+	width: 70%;
+	margin: auto;
+	box-shadow: 0 0 10px 20px rgba(0, 0, 0, 0.2);
+	padding: 50px;
+}
+
+h2{
+	font-size: 22px;
+	font-family: new;
+	line-height: 1.65;
+	margin: auto;
+}
+
+h1{
+	width: 100%;
+	text-align: center;
+	font-size: 48px;
+}
+.photo1 {
+	background-image: url(../img/1.jfif);
+}
+.photo2 {
+	background-image: url(../img/2.jfif);
+}
+.photo3 {
+	background-image: url(../img/3.jfif);
+}
+.photo4 {
+	background-image: url(../img/4.jpg);
+}
+.photo5 {
+	background-image: url(../img/5.jfif);
+}
+.photo6 {
+	background-image: url(../img/6.jfif);
+}
+.photo7 {
+	background-image: url(../img/7.jfif);
+}
+.photo8 {
+	background-image: url(../img/8.jfif);
+}
+.photo9 {
+	background-image: url(../img/9.jfif);
+}
+.photo10 {
+	background-image: url(../img/10.jfif);
+}
+.photo11 {
+	background-image: url(../img/11.jfif);
+}
+.photo12 {
+	background-image: url(../img/12.jpg);
+}
